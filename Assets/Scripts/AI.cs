@@ -7,14 +7,12 @@ public class AI : MonoBehaviour {
     public bool playerAI = false;
 
     public int countAI;
-    public string[] playerChoice;
     public Sprite o;
     private winCondition win;
     private GameController gameController;
 
     private void Awake()
     {
-        playerChoice = new string[9];
         win = GameObject.FindWithTag("GameController").GetComponent<winCondition>();
         gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         countAI = 0;
